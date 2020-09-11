@@ -30,6 +30,8 @@
             </div>
             <div class="carrito"></div>
         </section>
-    <script type="txt/javascript" src="mostrarProductos.js"></script>
+    <?php
+        include("public/cargarScript.php");
+    ?>
 </body>
 </html>
