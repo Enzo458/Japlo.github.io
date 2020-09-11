@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+.navegador{
+    background-color: aquamarine;
+    text-align: right;
+}
+
+.navegador li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navegador li :hover{
+    background-color: aqua;
+    border-radius: 9px;
+    padding: 6px;
+}
+
+#logo{
+    color:rgb(245, 159, 173);
+    font-size: 20px; 
+    padding: 2px;
+    margin-inline-end: 700px;
+}
+
+.navegador i{
+    margin-right: 10px;
+}
+.navegador li{
+    
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 30px;
+    padding: 5px;
+}
