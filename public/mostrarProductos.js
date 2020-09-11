@@ -20,4 +20,6 @@ const ajax= {
     }
 }
 
-ajax.cargarArchivo("../private/getProductos.php");
+document.addEventListener("DOMContentLoaded", function(){
+    ajax.cargarArchivo("../private/getProductos.php");
+},false);
