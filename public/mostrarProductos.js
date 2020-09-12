@@ -21,5 +21,5 @@ const ajax= {
     }
 }
 
-ajax.cargarArchivo("../private/getProductos.php");
+ajax.cargarArchivo("../../private/getProductos.php");
 
