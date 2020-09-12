@@ -1,5 +1,5 @@
 <?php
-    include('conectar.php');
+    include("conectar.php");
     $respuesta= new stdClass();
 
     $prodts=[];
@@ -16,7 +16,7 @@
         $i++;
     }
     $respuesta->prodts=$prodts;
-    
+
     mysqli_close($con);
     header('Content-Type: application/json');
     echo json_encode($respuesta);
