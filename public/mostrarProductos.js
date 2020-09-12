@@ -4,22 +4,22 @@ const ajax= {
 
         peticion.onreadystatechange= function(){
             
-            if(peticion.readyState==XMLHttpRequest.DONE){
-                if(peticion==200){
-                    console.log(JSON.parse(peticion.responseText));
+            if(peticion.readyState==this.DONE){
+                if(peticion.status==200){
+                    console.log(peticion.responseText);
                 }else if(peticion.status==400){
                     console.log("Eror");
                 }else {
                     console.log("Inesperado")
                 }
+            }if(peticion.readyState==this.LOADING){
+                console.log("cargando...")
             }
-
-            peticion.open("GET",ruta,true);
-            peticion.send();
         };
+        peticion.open("GET",ruta,true);
+        peticion.send();
     }
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    ajax.cargarArchivo("../private/getProductos.php");
-},false);
+ajax.cargarArchivo("../private/getProductos.php");
+
